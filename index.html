@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web-App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" name="city" id="citytxt" placeholder="Enter City">
+            <button type="button"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </div>
+        <div class="error">
+            <h1>error</h1>
+        </div>
+        <!-- <div class=""> -->
+            <div class="datetime">
+                <div class="day">
+                    <p id="curdate"></p>
+                </div>
+                <div class="time">
+                    <p5 id="curtime"></p5>
+                </div>
+                <h3 id="sky"></h3>
+            </div>
+        <!-- </div> -->
+        <div class="weather">
+            <div class="row">
+                <div class="column" >
+                    <img src="images/rain.png" alt="" id="weatherimg" class="weatherimg">
+                </div>
+                <div class="column">
+                    <h1 class="temperature">22°C</h1>
+                    <h2 class="city" id="city"></h2>
+                </div>
+            </div>
+            <div class="weather_details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/weather.js"></script>
+</body>
+</html>
